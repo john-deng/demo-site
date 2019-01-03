@@ -1,4 +1,4 @@
-baseURL = "http://demo.hidevops.io/"
+baseURL = "https://demo.hidevops.io/"
 title = "Docs Demo"
 theme = "hugo-material-docs"
 metadataformat = "yaml"
