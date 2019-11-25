@@ -19,4 +19,5 @@
 <glyph unicode="&#xe609;" glyph-name="star" d="M512 201.814l263.68-159.147-69.973 299.947 232.96 201.813-306.773 26.027-119.893 282.88-119.893-282.88-306.773-26.027 232.96-201.813-69.973-299.947z" />
 <glyph unicode="&#xe610;" glyph-name="warning" d="M554 340.667v172h-84v-172h84zM554 170.667v86h-84v-86h84zM42 42.667l470 810 470-810h-940z" />
 <glyph unicode="&#xe611;" glyph-name="hint" d="M614 682.667h240v-426h-300l-16 84h-240v-298h-84v726h384z" />
+<glyph unicode="&#xe612;" glyph-name="down" d="M13 4v2l-5 5-5-5v-2l5 5z" />
 </font></defs></svg>

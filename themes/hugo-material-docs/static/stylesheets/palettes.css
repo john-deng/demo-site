@@ -315,7 +315,8 @@
 
 @supports (-webkit-appearance:none) {
     .palette-primary-cyan {
-        background: #00bcd4
+        /* background: #00bcd4 */
+        overflow-x: hidden;
     }
 }
 

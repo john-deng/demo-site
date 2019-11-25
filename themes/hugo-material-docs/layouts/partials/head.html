@@ -5,6 +5,7 @@
   <!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
   <!--[if (gt IE 9)|!(IE)]><!--> 
   <html class="no-js" lang="{{ .Site.LanguageCode | default "en-us" }}"> 
+  <!--<![endif]-->
 
   <head {{ with .Site.LanguageCode }}lang="{{ . }}"{{ end }}>
     <meta charset="utf-8">
@@ -49,6 +50,7 @@
     </style>
 
     <link rel="stylesheet" href="{{ "stylesheets/application.css" | absURL }}">
+    <link rel="stylesheet" href="{{ "stylesheets/_animation.css" | absURL }}">
     <link rel="stylesheet" href="{{ "stylesheets/temporary.css" | absURL }}">
     <link rel="stylesheet" href="{{ "stylesheets/palettes.css" | absURL }}">
     <link rel="stylesheet" href="{{ "icons/style.css" | absURL }}">
@@ -70,6 +72,7 @@
     <link rel="stylesheet" href="{{ . | absURL }}">
     {{ end }}
     <script src="{{ "javascripts/modernizr.js" | absURL }}"></script>
+    <script src="{{ "javascripts/growingio.js" | absURL }}"></script>
 
     {{ with .RSSLink }}
     <link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
