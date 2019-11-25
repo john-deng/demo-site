@@ -1,11 +1,26 @@
-baseURL = "https://demo.hidevops.io/"
-title = "Docs Demo"
+baseurl = "https://hiboot.hidevops.io/"
+
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+title = "Hiboot Documentation"
+tocTitle = "Table of contents"
 theme = "hugo-material-docs"
-metadataformat = "yaml"
+
+hasCJKLanguage = true
+metaDataFormat = "yaml"
+
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir= false
+enableMissingTranslationPlaceholders = false
+
 canonifyurls = true
-sectionPagesMenu = "main"
+# sectionPagesMenu = "main"
 # Enable Google Analytics by entering your tracking id
 googleAnalytics = ""
+
 # Code highlighting options
 # Hugo uses Chroma but names are the same as the old pygments highlighter
 
@@ -19,21 +34,21 @@ pygmentsStyle = "tango" # "emacs" # "autumn" # "manni" # "friendly"
 # Other Chroma options can be added here (and in the highlight shortcode in the markdown file)
 # See list of supported options: https://gohugo.io/content-management/syntax-highlighting/#options
 # for example: pygmentsoptions = "linenos=true"
+
 [params]
 	# General information
 	author = "John Deng"
-	description = "Documentations demo site."
+	description = "Official site hidevops.io"
 	copyright = "Released under the Apache 2.0 license"
 
 	# Repository
 	provider = "GitHub"
-	repo_url = "https://github.com/john-deng/hugo-material-docs"
-
-	version = "1.0.1"
+	repo_url = "https://github.com/hidevopsio/hiboot"
+	version = "v1.2.1"
 	logo = "images/logo.png"
 	favicon = ""
 
-	permalink = "#"
+	permalink = " "
 
 	# Custom assets
 	custom_css = []
@@ -42,18 +57,107 @@ pygmentsStyle = "tango" # "emacs" # "autumn" # "manni" # "friendly"
 	# Syntax highlighting theme
 	highlight_css  = ""
 
+	# Theme color, available values are: red, pink, purple, deep purple, indigo, blue, light-blue, cyan, teal, green, light-green, lime, yellow, amber, orange, deep-orange, brown, grey and blue-grey
 	[params.palette]
-    	primary = "indigo"
+    	primary = "cyan"
     	accent  = "deep-purple"
 
     [params.font]
     	text = "Ubuntu"
     	code = "Ubuntu Mono"
 
-
 [social]
-	github  = "john-deng"
-	email   = "hello@email.com"
+	twitter = "johndcn"
+	github  = "hidevopsio"
+	email   = "hi.devops.io@gmail.com"
+
+[languages.en]
+	languageName = "English"
+  title = "Hiboot Cloud Native Application Framework"
+	TocTitle = "Table of contents"
+  weight = 0
+	contentDir = "content/en-US"
+  	url = "../en"
+	languageCode = "en"  
+
+[[languages.en.menu.main]]
+	name   = "Hiboot Cloud Native Application Framework"
+	url    = "/"
+	weight = 1
+
+# [[languages.en.menu.main]]
+# 	name   = "Getting started"
+# 	url    = "getting-started/"
+# 	weight = 10
+
+# [[languages.en.menu.main]]
+# 	name   = "Web Application"
+# 	url    = "web-app/"
+# 	weight = 20
+
+# [[languages.en.menu.main]]
+# 	name   = "Cli Application"
+# 	url    = "cli-app/"
+# 	weight = 30
+
+# [[languages.en.menu.main]]
+# 	name   = "Inversion of Control"
+# 	url    = "inversion-of-control/"
+# 	weight = 40
+
+# [[languages.en.menu.main]]
+# 	name   = "Auto Configuration"
+# 	url    = "auto-configure/"
+# 	weight = 50
+
+[languages.cn]
+	languageName = "中文"
+	title = "Hiboot云原生应用框架"
+	weight = 1
+	TocTitle = "目录"
+	contentDir = "content/zh-CN"
+  	url = "../cn"
+	languageCode = "cn"
+
+[[languages.cn.menu.main]]
+	name   = "介绍"
+	url    = "/cn/"
+	weight = 1
+
+# [[languages.cn.menu.main]]
+# 	name   = "入门"
+# 	url    = "cn/getting-started/"
+# 	weight = 10
+
+# [[languages.cn.menu.main]]
+# 	name   = "网络应用"
+# 	url    = "cn/web-app/"
+# 	weight = 20
+
+# [[languages.cn.menu.main]]
+# 	name   = "命令行应用"
+# 	url    = "cn/cli-app/"
+# 	weight = 30
+
+# [[languages.cn.menu.main]]
+# 	name   = "控制反转"
+# 	url    = "cn/inversion-of-control/"
+# 	weight = 40
+
+# [[languages.cn.menu.main]]
+# 	name   = "自动配置"
+# 	url    = "cn/auto-configure/"
+# 	weight = 50
+
+[indexes]
+  tag = "tags"
+  topic = "topics"
+	
+[taxonomies]
+  tag = "tags"
+  series = "series"
+  category = "categories"
+
 [blackfriday]
 	smartypants	= true
 	fractions = true
@@ -63,3 +167,4 @@ pygmentsStyle = "tango" # "emacs" # "autumn" # "manni" # "friendly"
 	home = [ "HTML", "JSON"]
 	page = [ "HTML", "JSON"]
 
+	
