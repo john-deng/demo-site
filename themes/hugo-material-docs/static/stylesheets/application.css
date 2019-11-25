@@ -1161,7 +1161,7 @@ h1 .article .headerlink {
     font-weight: 500;
   } 
 
-/* .article ul>li:before, .sticky ul>li:before {
+.article ul>li:before, .sticky ul>li:before {
     content: "\e602";
     display: block;
     float: left;
@@ -1170,7 +1170,7 @@ h1 .article .headerlink {
     width: 1.2em;
     margin-left: -1.2em;
     vertical-align: -.1em
-} */
+}
 
 .article p>code {
     white-space: nowrap;

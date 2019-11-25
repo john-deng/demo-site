@@ -1,4 +1,4 @@
-baseurl = "https://hiboot.hidevops.io/"
+baseurl = "https://demo.hidevops.io/"
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"
